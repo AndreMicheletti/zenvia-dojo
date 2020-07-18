@@ -63,7 +63,7 @@ Crie um novo ambiente virtual python (opcional), e instale as dependências `pip
 
 E execute os testes usando o comando:
  
-`pytest -x`
+`pytest -x --cov=romanos --cov-report=term`
 
 
 #### Executar usando docker

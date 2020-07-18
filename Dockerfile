@@ -7,4 +7,4 @@ COPY ./tests/* ./tests/
 
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
-CMD ["pytest",  "-x"]
+CMD ["pytest",  "-x", "--cov=romanos", "--cov-report=term"]
