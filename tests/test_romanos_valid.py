@@ -18,7 +18,10 @@ import pytest
     (52, "LII"),
     (112, "CXII"),
     (448, "CDXLVIII"),
+    (444, "CDXLIV"),
+    (494, "CDXCIV"),
     (512, "DXII"),
+    (949, "CMXLIX"),
     (999, "CMXCIX"),
     (5423, "MMMMMCDXXIII"),
 ])
