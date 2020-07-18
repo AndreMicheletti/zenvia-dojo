@@ -44,3 +44,42 @@ a mesma lógica que a lógica de `1` a `9` romano, apenas mudando
 os símbolos.
 
 ### Instruções
+
+Segue instruções para executar os testes do `pytest`
+
+#### Executar ambiente local
+
+Requisitos:
+ - `Python` >= 3.6
+ - `pip`
+ - (opcional) `virtualenv`
+
+Passos:
+
+Clone o repositório, navegue para o diretório do projeto 
+`cd zenvia_dojo/`
+
+Crie um novo ambiente virtual python (opcional), e instale as dependências `pip install -r requirements.txt`
+
+E execute os testes usando o comando:
+ 
+`pytest -x`
+
+
+#### Executar usando docker
+
+Requisitos:
+
+ - Docker
+ 
+Para executar, basta montar a imagem:
+
+`docker build -t zenvia_test .`
+
+E depois rodar a imagem:
+
+`docker run -it zenvia_test`
+
+Obs:
+Caso não funcione, é possível tirar o argumento `-it`.
+Ele serve somente para manter as cores do terminal
