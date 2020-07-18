@@ -36,7 +36,8 @@ Ou seja, para dizer `5` quando estamos na cada dos
 milhares, usamos 5 vezes o `M`
 
 Para dizer `4` na casa das centenas, precisamos usar
-a lógica de subtração, assim `CD`
+a lógica de subtração, assim `CD`. Assim como fazemos 
+quando representamos `4` usando `IV`
 
 Portanto, cada __casa__ do nosso sistema numérico seguia
 a mesma lógica que a lógica de `1` a `9`, apenas mudando
