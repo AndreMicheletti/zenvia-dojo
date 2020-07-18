@@ -1,0 +1,16 @@
+.idea
+.idea/
+.idea*
+
+__pycache__/
+
+*.pytest_cache*
+*.zip
+ze-back-dev*
+ze-back-prod*
+
+htmlcov/*
+htmlcov*
+.coverage
+
+htmlcov
