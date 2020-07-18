@@ -1,5 +1,9 @@
 # Zenvia Test
 
+#### Problema escolhido
+
+[Conversão de números romanos](http://codingdojo.org/kata/RomanNumerals/)
+
 ### Descrição da solução
 
 Para chegar a essa solução, eu decidi usar o método TDD

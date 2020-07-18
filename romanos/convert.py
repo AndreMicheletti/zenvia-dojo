@@ -21,6 +21,11 @@ def read_input() -> int:
 
 def convert_arabic_to_roman(arabic_number: int) -> str:
 
+    if arabic_number > 9999:
+        raise ValueError("Can't convert numbers grated than 9999")
+    if not isinstance(arabic_number, int) or isinstance(arabic_number, bool):
+        raise TypeError("Can't convert values othen than integers")
+
     milhares_digit = int(arabic_number / 1000) % 10
     centena_digit = int(arabic_number / 100) % 10
     dezena_digit = int(arabic_number / 10) % 10
