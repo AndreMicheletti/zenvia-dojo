@@ -2,6 +2,7 @@ import pytest
 
 
 @pytest.fixture(params=[
+    (0, ValueError),
     (10000, ValueError),
     (60000, ValueError),
     ("a", TypeError),

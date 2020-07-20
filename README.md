@@ -61,7 +61,13 @@ Clone o repositório, navegue para o diretório do projeto
 
 Crie um novo ambiente virtual python (opcional), e instale as dependências `pip install -r requirements.txt`
 
-E execute os testes usando o comando:
+E execute os testes usando o Makefile:
+
+```shell script
+make run-tests
+```
+ 
+ ou usando o comando completo:
  
 `pytest -x --cov=romanos --cov-report=term`
 
@@ -72,13 +78,19 @@ Requisitos:
 
  - Docker
  
-Para executar, basta montar a imagem:
+Para executar, basta usar o target do Makefile:
 
-`docker build -t zenvia_test .`
+```shell script
+make run-docker
+```
+ 
+Ou você pode montar a imagem e executar usando o docker cli:
 
-E depois rodar a imagem:
 
-`docker run -it zenvia_test`
+```shell script
+docker build -t zenvia_test .
+docker run -it zenvia_test
+```
 
 Obs:
 Caso não funcione, é possível tirar o argumento `-it`.

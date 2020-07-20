@@ -15,10 +15,10 @@ def convert_arabic_to_roman(
     :return: (str) converted value to roman numeral
     """
 
-    if arabic_number > 9999:
-        raise ValueError("Can't convert numbers greater than 9999")
     if not isinstance(arabic_number, int) or isinstance(arabic_number, bool):
         raise TypeError("Can't convert values other than integers")
+    if arabic_number > 9999 or arabic_number < 1:
+        raise ValueError("Can't convert numbers less than 1 or greater than 9999")
 
     # extract each digit from the number
     milhares_digit = int(arabic_number / 1000) % 10
